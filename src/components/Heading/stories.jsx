@@ -4,12 +4,16 @@ export default {
 	title: 'Heading',
 	component: Heading,
 	argTypes: {
-		// children: 'string'
+		children: { type: 'string' }
+	},
+	args: {
+		children: 'Some Text'
+	},
+	parameters: {
+		backgrounds: {
+			default: 'dark'
+		}
 	}
 };
 
 export const Template = (args) => (<Heading {...args}/>);
-Template.bind({});
-Template.args = {
-	children: 'Some Text'
-};
