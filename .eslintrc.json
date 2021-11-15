@@ -20,6 +20,7 @@
         "react"
     ],
     "rules": {
+        "react/prop-types": "off",
         "indent": ["error", "tab"],
         "no-tabs":"off",
         "semi":[2, "always"]
