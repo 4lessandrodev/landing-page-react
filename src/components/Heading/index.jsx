@@ -20,3 +20,5 @@ Heading.prototype = {
 	size: P.oneOf(['small', 'medium', 'xlarge', 'large']).isRequired,
 	color: P.oneOf(['primary', 'secondary']).isRequired
 };
+
+export default Heading;

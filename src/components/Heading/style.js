@@ -15,13 +15,22 @@ const TitleSize = {
 	`
 };
 
+const TitleColor = {
+	primary: (theme) => css`
+		color: ${theme.colors.primary};
+	`,
+	secondary: (theme) => css`
+		color: ${theme.colors.secondary};
+	`
+};
+
 const UpperCase = (isUpper) => css`
 	text-transform: ${isUpper ? 'uppercase' : 'none'};
 `;
 
 export const Title = styled.h1`
-	${({ theme, size, isUppserCase }) => css`
-		color: ${theme.colors.primary};
+	${({ theme, size, isUppserCase, color }) => css`
+		${TitleColor[color](theme)};
 		${TitleSize[size](theme)};
 		${UpperCase(isUppserCase)};
 	`}

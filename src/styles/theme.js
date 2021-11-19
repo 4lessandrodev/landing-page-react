@@ -1,6 +1,11 @@
 export const Theme = {
 	colors: {
-		primary: '#af2'
+		primary: '#af2',
+		secondary: '#f96e46',
+		blue: '#00e8fc',
+		blac: '#545863',
+		crayola: '#f9c846',
+		rose: '#ffe3e3'
 	},
 	spacings: {
 	},
