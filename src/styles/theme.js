@@ -7,8 +7,6 @@ export const Theme = {
 		crayola: '#f9c846',
 		rose: '#ffe3e3'
 	},
-	spacings: {
-	},
 	sizes: {
 		xxsmall: '0.8rem',
 		xsmall: '1.2rem',
@@ -18,6 +16,16 @@ export const Theme = {
 		xlarge: '2.8rem',
 		large: '3.2rem',
 		huge: '4rem'
+	},
+	spacings: {
+		xxsmall: '0.2rem',
+		xsmall: '0.8rem',
+		small: '1.2rem',
+		xmedium: '1.6rem',
+		medium: '2rem',
+		xlarge: '2.4rem',
+		large: '2.8rem',
+		huge: '3rem'
 	}
 };
 
