@@ -3,7 +3,7 @@ export const Theme = {
 		primary: '#af2',
 		secondary: '#f96e46',
 		blue: '#00e8fc',
-		blac: '#545863',
+		black: '#545863',
 		crayola: '#f9c846',
 		rose: '#ffe3e3',
 		white: '#ffffff'
