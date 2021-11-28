@@ -2,6 +2,9 @@
   "name": "landing-page",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "node": "16.13"
+  },
   "resolutions": {
     "styled-components": "^5",
     "babel-loader":"^8.2"
@@ -20,8 +23,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
+    "test:cov": "react-scripts test --coverage",
     "eject": "react-scripts eject",
-    "storybook": "NODE_OPTIONS=--openssl-legacy-provider start-storybook -p 6006 -s public",
+    "storybook": "start-storybook -p 6006 -s public",
     "build-storybook": "build-storybook -s public"
   },
   "browserslist": {
@@ -61,6 +65,16 @@
           "import/no-anonymous-default-export": "off"
         }
       }
+    ]
+  },
+  "jest":{
+    "collectCoverageFrom":[
+      "src/**/*.{js,jsx,ts,tsx}",
+      "!<rootDir>/src/*.{js,jsx,ts,tsx}",
+      "!<rootDir>/src/**/*mock*.{js,jsx,ts,tsx}",
+      "!<rootDir>/src/styles/*.{js,jsx,ts,tsx}",
+      "!<rootDir>/**/stories.{js,jsx,ts,tsx}",
+      "!<rootDir>/node_modules/"
     ]
   }
 }

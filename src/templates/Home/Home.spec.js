@@ -1,9 +1,9 @@
 import { screen } from '@testing-library/react';
+import RenderWithTheme from '../../styles/render';
 import Home from './index';
-import { RenderTheme } from '../../styles/render';
 
 test('renders learn react link', () => {
-	RenderTheme(<Home />);
+	RenderWithTheme(<Home />);
 	const linkElement = screen.getByText(/hello/i);
 	expect(linkElement).toBeInTheDocument();
 });

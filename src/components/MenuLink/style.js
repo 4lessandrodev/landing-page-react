@@ -13,7 +13,7 @@ export const MenuLink = styled.a`
 		&::after{
 			content: '';
 			position: absolute;
-			bottom: 0;
+			bottom: 0.4rem;
 			left: 0%;
 			width: 0;
 			height: 0.3rem;

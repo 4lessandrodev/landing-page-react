@@ -5,7 +5,8 @@ export const Theme = {
 		blue: '#00e8fc',
 		blac: '#545863',
 		crayola: '#f9c846',
-		rose: '#ffe3e3'
+		rose: '#ffe3e3',
+		white: '#ffffff'
 	},
 	sizes: {
 		xxsmall: '0.8rem',
@@ -26,6 +27,9 @@ export const Theme = {
 		xlarge: '2.4rem',
 		large: '2.8rem',
 		huge: '3rem'
+	},
+	media: {
+		lteMedium: '(max-width: 768px)'
 	}
 };
 
