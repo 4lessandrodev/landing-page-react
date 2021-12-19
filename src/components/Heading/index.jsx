@@ -3,12 +3,12 @@ import { Title } from './style';
 
 export const Heading = ({
 	children,
-	isUppserCase = false,
+	isUpperCase = false,
 	size = 'medium',
 	color = 'primary'
 }) => {
 	return (<Title
-		isUppserCase={isUppserCase}
+		isUpperCase={isUpperCase}
 		size={size}
 		color={color}
 	>{children}</Title>);
@@ -16,7 +16,7 @@ export const Heading = ({
 
 Heading.prototype = {
 	children: P.element.isRequired,
-	isUppserCase: P.bool.isRequired,
+	isUpperCase: P.bool.isRequired,
 	size: P.oneOf(['small', 'medium', 'xlarge', 'large']).isRequired,
 	color: P.oneOf(['primary', 'secondary']).isRequired
 };

@@ -56,7 +56,7 @@ describe('<Heading />', () => {
 	});
 
 	it('should render with uppercase', () => {
-		RenderWithTheme(<Heading isUppserCase={true}>Title</Heading>);
+		RenderWithTheme(<Heading isUpperCase={true}>Title</Heading>);
 		const element = screen.getByRole('heading', { name: 'Title' });
 
 		expect(element).toHaveStyle({

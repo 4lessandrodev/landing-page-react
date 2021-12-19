@@ -29,9 +29,9 @@ const UpperCase = (isUpper) => css`
 `;
 
 export const Title = styled.h1`
-	${({ theme, size, isUppserCase, color }) => css`
+	${({ theme, size, isUpperCase, color }) => css`
 		${TitleColor[color](theme)};
 		${TitleSize[size](theme)};
-		${UpperCase(isUppserCase)};
+		${UpperCase(isUpperCase)};
 	`}
 `;

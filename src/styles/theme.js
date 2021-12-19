@@ -29,7 +29,8 @@ export const Theme = {
 		huge: '3rem'
 	},
 	media: {
-		lteMedium: '(max-width: 768px)'
+		lteMedium: '(max-width: 768px)',
+		lteLarge: '(max-width: 1024px)'
 	}
 };
 

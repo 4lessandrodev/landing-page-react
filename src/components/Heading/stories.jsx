@@ -7,11 +7,11 @@ export default {
 		children: { type: 'string' },
 		size: { options: ['small', 'medium', 'xlarge', 'large'], control: { type: 'select' } },
 		color: { options: ['primary', 'secondary'], control: { type: 'select' } },
-		isUppserCase: { type: 'boolean' }
+		isUpperCase: { type: 'boolean' }
 	},
 	args: {
 		children: 'Title Example',
-		isUppserCase: false
+		isUpperCase: false
 	},
 	parameters: {
 		backgrounds: {
